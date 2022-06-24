@@ -1,0 +1,12 @@
+Jared Davis
+
+1) Main Page (index) CHECK
+    * Abstract
+2) Awards & Honors  CHECK
+    * A running list of awards associated with a picture
+3) Extracurricular activites 
+    * Same as awards and Honors
+4) Clubs
+    * same as previous
+5) About me Page
+    * More interest related, more personal
