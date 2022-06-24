@@ -109,7 +109,7 @@ nav {
 /* award content styles */
 
 .award-container {
-    height: auto;
+    height: 100vh;
 }
 
 .award-items {
