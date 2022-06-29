@@ -171,5 +171,61 @@ nav {
 /* extrac content styles */
 
 .activity-content {
-    height: 100vh;
+    height: 115vh;
 }
+
+.activity-items {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1%;
+    flex-wrap: wrap;
+}
+
+.activity-item {
+    width: 550px;
+}
+
+.activity-img img {
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.activity-description {
+    background-color: #D7DBDD;
+    border-radius: 10px;
+    height: 475px;
+}
+
+.activity-description h2 {
+    padding: 2.5%;
+    font-size: 30px;
+}
+
+.activity-description p {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.activity-description li {
+    padding: 15px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+@media (max-width: 700px) {
+    .activity-items {
+        justify-content: center;
+        align-items: center;
+    }
+    .activity-img img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
