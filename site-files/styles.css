@@ -1,0 +1,312 @@
+/* master styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* nav styles */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/books_stacked\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    height: 100px;
+}
+
+.nav-links {
+    height: 100px;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 0;
+}
+
+.nav-links ul li{
+    display: inline-block;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44556;
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+/* body styles */
+
+.abstract {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.abstract h1 {
+    font-size: 62px;
+}
+
+.abstract-paragraphs p {
+    margin: 10px 0 4px;
+    font-size: 16px;
+    color: white;
+}
+
+/* award header styles */
+
+.header-awards {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/awards.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.award-header {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.award-header h1 {
+    font-size: 62px;
+}
+
+.award-header p {
+    font-size: 16px;
+}
+
+/* award content styles */
+
+.award-container {
+    height: 100vh;
+}
+
+.award-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.award-item {
+    display: inline-flex;
+    height: 250px;
+    padding: 1%;
+    align-items: center;
+}
+
+.award-item > .award-image > img {
+    height: 250px;
+    width: auto;
+}
+
+.award-items > .award-item > .award-image {
+    width: 20%;
+    text-align: center;
+}
+
+.award-description {
+    font-size: 30px;
+    width: 80%;
+}
+
+/* extrac header styles */
+
+.activity-header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/power_lifting.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.activity-subtitle {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.activity-subtitle h1 {
+    font-size: 62px;
+}
+
+.activity-subtitle p {
+    font-size: 16px;
+}
+
+/* extrac content styles */
+
+.activity-content {
+    height: 115vh;
+}
+
+.activity-items {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1%;
+    flex-wrap: wrap;
+}
+
+.activity-item {
+    width: 550px;
+}
+
+.activity-img img {
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.activity-description {
+    background-color: #D7DBDD;
+    border-radius: 10px;
+    height: 475px;
+}
+
+.activity-description h2 {
+    padding: 2.5%;
+    font-size: 30px;
+}
+
+.activity-description p {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.activity-description li {
+    padding: 15px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+@media (max-width: 700px) {
+    .activity-items {
+        justify-content: center;
+        align-items: center;
+    }
+    .activity-img img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/*Club header*/
+
+.club-header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.club-subtitle {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.club-subtitle h1 {
+    font-size: 62px;
+}
+
+.club-subtitle p {
+    font-size: 16px;
+}
+
+/*Club content*/
+
+.club-content {
+    height: auto;
+    padding: 2%;
+}
+
+.club-items {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.club-item {
+    display:flex;
+    align-items: center;
+}
+
+.club-img {
+    height: 300px;
+    width: 30%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.club-description {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #D7DBDD;
+    width: 70%;
+}
+
+.club-description h2 {
+    font-size: 25px;
+}
+
+.club-description p {
+    font-size: 18px;
+}
+
+.club-description hr {
+    border-top: 2.5px dashed rgb(110, 108, 108);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: transparent;
+}
+
+.image img {
+    height: 25%;
+    width: 25%;
+}
